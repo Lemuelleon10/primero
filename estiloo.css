@@ -1,0 +1,168 @@
+h1{
+  color:rgb(235, 102, 0);
+  font-style: italic;
+  text-align: center;
+}	
+h2{
+  color:rgb(71, 0, 141);
+  font-style: italic;
+  text-align: center;
+  font-weight: 700;
+}	
+
+h3{
+  color:rgb(19, 105, 217);
+  font-style: italic;
+  text-align: center;
+  font-weight: 900;
+}	
+
+h4{
+  color:rgb(113, 0, 199);
+  font-style: inherit;
+  text-align: center;
+  font-weight: 1200;
+}	
+h{
+  color:rgb(145, 89, 188);
+  font-style: inherit;
+  text-align: left;
+  font-weight: 1200;
+}	
+
+
+#mi_estilo{
+  color: chocolate;
+  text-align: center;
+  font-size: x-large;
+}
+#nuestro_estilo{
+  color: rgb(255, 0, 144);
+  text-align: center;
+  font-size: x-large;
+}
+
+* {box-sizing:border-box}
+
+/* Slideshow container */
+.slideshow-container {
+  max-width: 1000px;
+  position: static;
+  margin: auto;
+}
+
+/* Hide the images by default */
+.mySlides {
+  display:none;
+}
+
+
+/* Next & previous buttons */
+.prev, .next {
+  cursor: pointer;
+  position: static;
+  top: 50%;
+  width: auto;
+  margin-top: -22px;
+  padding: 16px;
+  color: rgb(0, 51, 255);
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+}
+
+/* Position the "next button" to the right */
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover, .next:hover {
+  background-color: rgba(75, 74, 176, 0.8);
+}
+
+/* Caption text */
+.text {
+  color: #f2f2f2;
+  font-size: 26px;
+  padding: 8px 12px;
+  position: static;
+  bottom: 8px;
+  width: 100%;
+  text-align: center;
+}
+
+/* Number text (1/3 etc) */
+.numbertext {
+  color: #0022ff;
+  font-size: 19px;
+  padding: 18px 12px;
+  position: static;
+  top: 0;
+}
+
+/* The dots/bullets/indicators */
+.dot {
+  cursor: pointer;
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: #1500ff;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+.active, .dot:hover {
+  background-color: #f2ff00;
+}
+
+/* Fading animation */
+.fade {
+  animation-name: fade;
+  animation-duration: 2.5s;
+}
+
+@keyframes fade {
+  from {opacity: .4}
+  to {opacity: 1}
+}
+
+
+/* Clase general para el sprite */
+.sprite {
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  display: inline-block;
+  width: 100px; /* Tamaño del ícono individual */
+  height: 100px;
+  background-image: url('sprite.png');
+  background-size: 200px 200px; /* Tamaño total de la imagen */
+}
+
+/* Facebook */
+.bg-facebook {
+  background-position: 0 0;
+}
+
+/* Instagram */
+.bg-insta {
+  background-position: -100px 0;
+}
+
+/* YouTube */
+.bg-youtube {
+  background-position: 0 -100px;
+}
+
+/* Twitter */
+.bg-twitter {
+  background-position: -100px -100px;
+}
+
+  
+  

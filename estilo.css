@@ -1,0 +1,29 @@
+h1{
+						color:rgb(235, 102, 0);
+						font-style: italic;
+						text-align: center;
+					}	
+				h2{
+						color:rgb(71, 0, 141);
+						font-style: italic;
+						text-align: center;
+						font-weight: 700;
+					}	
+
+				h3{
+						color:rgb(0, 181, 253);
+						font-style: italic;
+						text-align: center;
+						font-weight: 900;
+					}	
+
+				#mi_estilo{
+						color: chocolate;
+						text-align: center;
+						font-size: x-large;
+					}
+				#nuestro_estilo{
+						color: rgb(255, 0, 144);
+						text-align: center;
+						font-size: x-large;
+					}

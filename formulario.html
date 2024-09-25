@@ -1,0 +1,111 @@
+<html>
+
+	<head>
+		<title>Alumnos</title>
+		
+		<link rel="stylesheet"type="text/css" href="estiloo.css">
+	</head>
+
+	<body bgcolor= #84b6f4 text="black">
+
+		<center>
+		
+		<H1>Formulario de alumnos</H1>
+
+		<H1>Ingresa tus datos:</H1>
+
+		
+		<form action="formulario.html">
+			<table> 
+				<tr>
+	
+					<td><h2>NC:</h2></td>
+					<td><input type="text" name ="NC"></td>
+				</tr>
+				<tr>
+	
+					<td> <h2>Contraseña</h2></td>
+					<td><input type="password" name ="clave"></td>
+					</tr>
+				<tr>
+	
+					<td><h2>Nombre:</h2></td>
+					<td><input type="text" name ="Nom"></td>
+				</tr>
+				<tr>
+	
+					<td><h2>Especialidad:</h2></td>
+					<td>
+						<select name="esp">
+							<option value="1">Ing. en Sistemas Computacionales</option>
+							<option value="2">Ing. Industrial</option>
+							<option value="3">Ing. Civil</option>
+							<option value="4">Ing. Bioquimica</option>
+							<option value="5">Ing. Electronica</option>
+							<option value="6">Ing. Mecatronica</option>
+							<option value="7">Ing. Biomedica</option>
+							<option value="8">Ing. Logistica</option>
+							<option value="9">Lic. en Administracion</option>
+							<option value="10">Contador Publico</option>
+						</select>
+
+					</td>
+				</tr>
+
+					<td><h2>Genero</h2></td>
+					<td>
+						<input type="radio" name="gen" value="M" > Masculino <br>
+						<input type="radio" name="gen" value="F"> Femenino <br>
+						<input type="radio" name="gen" value="G"> Gay <br>
+
+						
+					</td>
+	
+					<tr>
+	
+						<td><h2>Fecha de nacimiento:</h2></td>
+						<td><input type="text" name ="Nac"></td>
+					</tr>
+
+					<tr>
+	
+						<td><h2>Fecha de Ingreso:</h2></td>
+						<td><input type="text" name ="ingreso"></td>
+					</tr>
+
+					<tr>
+	
+						<td><h2>Escribe comentarios o sugerencia</h2></td>
+						<td>
+							<textarea name="comenta" rows="5" cols="40">
+							
+							</textarea>
+						</td>
+					</tr>
+
+					<tr>
+	
+						<td><h2>¿Reprobo al menos una materia?</h2></td>
+						<td><input type="checkbox" name ="reprobo" ></td>
+
+					</tr>
+
+					<tr>
+	
+						<td> </td>
+						<td><input style="background-color: #ff6a00" value="Guardar" name="button" type="submit"/></td>
+						
+					</tr>
+
+					
+
+
+			</table>
+
+		</form>
+
+	</center>
+
+	</body>
+
+</html>
