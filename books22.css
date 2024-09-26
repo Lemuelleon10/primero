@@ -1,0 +1,60 @@
+books{
+	display:	block;
+	width:		100%;
+	background-color:	rgb(195, 207, 250);
+	background-position:	80% 10px;
+	margin:			0;
+	font-family:		verdana,Geneva,arial
+}
+
+book{
+	display:	block;
+	background-color:	rgb(52, 101, 200);
+	width:			50%;
+	margin-bottonm:		20px;
+	margin-top:		15px;
+	margin-left:		10px;
+}
+
+author{
+	display:	block;
+	background-color:	#e2f18d;
+	font-size:		larger;
+	padding:		6px;
+	font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+	text-align: center;
+}
+
+publisher, contentType {
+	display:	block;
+	background-color:	#c4ffbc;
+	font-size:		larger;
+	padding:		3px;
+	font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+}
+
+price{
+	display:	block;
+	background-color:	#58e499;
+	font-size:		larger;
+	padding:		3px;
+	font-family: fantasy;
+	text-align: center;
+}
+
+isbn{
+	display:	block;
+	background-color:	#f77f7f;
+	font-size:		larger;
+	padding:		3px;
+	font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+	text-align: center;
+}
+
+title{
+	display:		block;
+	color:			white;
+	font-size:		larger;
+	text-align: center;
+	font-family: 'Times New Roman', Times, serif;
+}
