@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Programas JavaScript</title>
+
+    <!-- Google Fonts para una tipografía más moderna -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;500&display=swap" rel="stylesheet">
+
+    <style>
+        /* Estilos generales del cuerpo */
+        body {
+            font-family: 'Poppins', sans-serif;
+            background-color: #88b6ac;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            height: 100vh;
+        }
+
+        h1 {
+            font-size: 3rem;
+            color: #222;
+            font-weight: 500;
+            margin-top: 20px;
+            text-align: center;
+        }
+
+        /* Estilo del menú flotante */
+        .menu-flotante {
+            position: fixed;
+            top: 50%;
+            left: 20px;
+            transform: translateY(-50%);
+            background-color: #1f2833;
+            padding: 20px;
+            border-radius: 20px;
+            box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+        }
+
+        .menu-flotante a {
+            display: block;
+            color: #fff;
+            text-decoration: none;
+            padding: 15px;
+            margin: 10px 0;
+            font-size: 1.2rem;
+            text-align: center;
+            border-radius: 10px;
+            background-color: #45a29e;
+            transition: all 0.3s ease;
+        }
+
+        .menu-flotante a:hover {
+            background-color: #66fcf1;
+            transform: scale(1.05);
+        }
+
+        /* Estilo del contenedor de resultados */
+        .output {
+            width: 70%;
+            max-width: 800px;
+            margin: 20px auto;
+            padding: 40px;
+            background-color: white;
+            border-radius: 15px;
+            box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+            transition: all 0.3s ease-in-out;
+            opacity: 0;
+            transform: translateY(20px);
+            text-align: center;
+        }
+
+        .output.visible {
+            opacity: 1;
+            transform: translateY(0);
+        }
+
+        .output h2 {
+            color: #45a29e;
+            font-size: 2rem;
+        }
+
+        /* Botón y efecto de scroll suave */
+        a {
+            cursor: pointer;
+        }
+
+        html {
+            scroll-behavior: smooth;
+        }
+
+        /* Estilos del contenedor completo para una apariencia profesional */
+        #contenedor {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 20px;
+            text-align: center;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div id="contenedor">
+        <h1>Programas JavaScript</h1>
+
+        <!-- Menú flotante con tres opciones -->
+        <div class="menu-flotante">
+            <a href="#output" onclick="ejecutarPrograma(1)">Programa 1: Calcular RFC</a>
+            <a href="#output" onclick="ejecutarPrograma(2)">Programa 2: Ecuación Cuadrática</a>
+            <a href="#output" onclick="ejecutarPrograma(3)">Programa 3: Adivina un Número</a>
+        </div>
+
+        <!-- Contenedor de salida para mostrar los resultados -->
+        <div class="output" id="output">
+            <h2>Resultado</h2>
+            <p>Selecciona un programa del menú para ver el resultado aquí.</p>
+        </div>
+    </div>
+
+    <script>
+        // Programa 1: Calcular RFC
+        function calcularRFC(nombre, apellidoPaterno, apellidoMaterno, fechaNacimiento) {
+            const rfcParte1 = apellidoPaterno.charAt(0).toUpperCase() +
+                              apellidoPaterno.match(/[aeiou]/i)[0].toUpperCase() +
+                              apellidoMaterno.charAt(0).toUpperCase() +
+                              nombre.charAt(0).toUpperCase();
+            const fecha = new Date(fechaNacimiento);
+            const anio = fecha.getFullYear().toString().slice(2);
+            const mes = ("0" + (fecha.getMonth() + 1)).slice(-2);
+            const dia = ("0" + fecha.getDate()).slice(-2);
+            const rfc = rfcParte1 + anio + mes + dia;
+            return rfc;
+        }
+
+        // Programa 2: Resolver Ecuación Cuadrática
+        function resolverEcuacionCuadratica(a, b, c) {
+            const discriminante = b * b - 4 * a * c;
+            if (discriminante > 0 && a !== 0) {
+                const x1 = (-b + Math.sqrt(discriminante)) / (2 * a);
+                const x2 = (-b - Math.sqrt(discriminante)) / (2 * a);
+                return { x1, x2 };
+            } else {
+                return null;
+            }
+        }
+
+        // Programa 3: Adivina un Número
+        function adivinaNumero() {
+            const numeroSecreto = Math.floor(Math.random() * 100) + 1;
+            let intento;
+            let intentosRealizados = 0;
+
+            do {
+                intento = parseInt(prompt("Adivina un número entre 1 y 100:"));
+                intentosRealizados++;
+                if (intento > numeroSecreto) {
+                    alert("Te pasaste");
+                } else if (intento < numeroSecreto) {
+                    alert("Te falta");
+                }
+            } while (intento !== numeroSecreto);
+
+            alert(`¡Adivinaste! El número era ${numeroSecreto}. Intentos realizados: ${intentosRealizados}`);
+        }
+
+        // Ejecutar los programas según el número seleccionado
+        function ejecutarPrograma(programa) {
+            const outputDiv = document.getElementById('output');
+            outputDiv.classList.add("visible"); // Animación de mostrar el resultado
+
+            if (programa === 1) {
+                // Ejecutar el programa 1 - Calcular RFC
+                const nombre = prompt("Introduce tu nombre:");
+                const apellidoPaterno = prompt("Introduce tu apellido paterno:");
+                const apellidoMaterno = prompt("Introduce tu apellido materno:");
+                const fechaNacimiento = prompt("Introduce tu fecha de nacimiento (YYYY-MM-DD):");
+                const rfc = calcularRFC(nombre, apellidoPaterno, apellidoMaterno, fechaNacimiento);
+                outputDiv.innerHTML = `<h2>RFC Calculado:</h2><p>Tu RFC es: ${rfc}</p>`;
+            } else if (programa === 2) {
+                // Ejecutar el programa 2 - Resolver Ecuación Cuadrática
+                const a = parseFloat(prompt("Introduce el valor de a:"));
+                const b = parseFloat(prompt("Introduce el valor de b:"));
+                const c = parseFloat(prompt("Introduce el valor de c:"));
+                const resultado = resolverEcuacionCuadratica(a, b, c);
+                if (resultado) {
+                    outputDiv.innerHTML = `<h2>Soluciones de la Ecuación Cuadrática:</h2><p>x1 = ${resultado.x1}, x2 = ${resultado.x2}</p>`;
+                } else {
+                    outputDiv.innerHTML = `<h2>No hay solución real</h2>`;
+                }
+            } else if (programa === 3) {
+                // Ejecutar el programa 3 - Adivina un número
+                adivinaNumero(); // Aquí el resultado va en alertas
+                outputDiv.innerHTML = `<h2>¡Gracias por jugar!</h2>`;
+            }
+        }
+    </script>
+
+</body>
+</html>
