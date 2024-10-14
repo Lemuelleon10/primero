@@ -1,0 +1,587 @@
+
+
+<html>
+
+	<head>
+		<style type="text/css">
+							<!-- 
+								
+							
+								
+							-->
+						</style>
+
+						<title>Bienvenidos a mi pagina</title>
+						
+						<link rel="stylesheet"type="text/css" href="estiloo.css">
+						<script src="tu-script.js"></script>
+						<script src="jj.js"></script>
+
+
+						<style>
+					.floating-menu {
+						position: fixed;
+						bottom: 20px;
+						right: 20px;
+						background-color: rgba(0, 0, 0, 0.8);
+						padding: 10px;
+						border-radius: 8px;
+						z-index: 100;
+					}
+
+					.floating-menu a {
+						display: block;
+						color: white;
+						padding: 8px;
+						text-decoration: none;
+					}
+
+					.floating-menu a:hover {
+						background-color: #444;
+					}
+				</style>
+						<style>
+					body {
+						cursor: crosshair;
+					}
+				</style>
+
+			<style>
+				/* Estilos del contenedor del reloj */
+				.clock {
+					width: 200px;
+					height: 200px;
+					border: 8px solid #333;
+					border-radius: 50%;
+					position: relative;
+					margin: 50px auto;
+					background: radial-gradient(circle, #fff 50%, #eee 100%);
+					box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
+				}
+
+				/* Pivote del reloj (centro) */
+				.clock::after {
+					content: '';
+					width: 12px;
+					height: 12px;
+					background-color: #333;
+					position: absolute;
+					top: 50%;
+					left: 50%;
+					transform: translate(-50%, -50%);
+					border-radius: 50%;
+					z-index: 10;
+				}
+
+				/* Estilos comunes para las manecillas del reloj */
+				.hand {
+					position: absolute;
+					top: 25%;
+					left: 48%;
+					transform-origin: 50% 100%;
+					transition-timing-function: cubic-bezier(0.4, 2.3, 0.3, 1);
+					transition: transform 0.5s;
+				}
+
+				/* Manecilla de la hora */
+				.hour-hand {
+					width: 6px;
+					height: 47px;
+					background-color: #333;
+					z-index: 5;
+					transform-origin: 50% 90%;
+				}
+
+				/* Manecilla del minuto */
+				.minute-hand {
+					width: 4px;
+					height: 55px;
+					background-color: #666;
+					z-index: 4;
+					transform-origin: 50% 90%;
+				}
+
+				/* Manecilla del segundo */
+				.second-hand {
+					width: 2px;
+					height: 54px;
+					background-color: red;
+					z-index: 3;
+					transform-origin: 50% 90%;
+				}
+
+				/* Números en el reloj */
+				.number {
+					position: absolute;
+					font-size: 18px;
+					font-weight: bold;
+					color: #333;
+					transform: translate(-50%, -50%);
+				}
+
+				.number1  { top: 12%; left: 50%; }
+				.number2  { top: 24%; left: 83%; }
+				.number3  { top: 50%; left: 90%; }
+				.number4  { top: 76%; left: 83%; }
+				.number5  { top: 88%; left: 50%; }
+				.number6  { top: 76%; left: 17%; }
+				.number7  { top: 50%; left: 10%; }
+				.number8  { top: 24%; left: 17%; }
+
+
+			 </style>
+						
+				<style>
+				
+
+				body {
+					cursor: url('https://example.com/custom-cursor.png'), auto; /* Cambia la URL por la de tu imagen */
+				}
+
+				/* Estilos del menú flotante moderno */
+				.floating-menu {
+					position: fixed;
+					bottom: 20px;
+					right: 20px;
+					background-color: #333;
+					padding: 15px;
+					border-radius: 12px;
+					box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.3);
+					z-index: 100;
+				}
+
+				.floating-menu a {
+					display: flex;
+					align-items: center;
+					justify-content: space-between;
+					background-color: #444;
+					color: white;
+					padding: 10px 20px;
+					margin: 10px 0;
+					border-radius: 8px;
+					text-decoration: none;
+					transition: background-color 0.3s, transform 0.3s;
+				}
+
+				.floating-menu a:hover {
+					background-color: #555;
+					transform: translateY(-5px);
+				}
+
+				.floating-menu i {
+					margin-right: 10px;
+				}
+
+				/* Animación de entrada del menú */
+				.floating-menu {
+					animation: slideIn 1s ease-in-out;
+				}
+
+				@keyframes slideIn {
+					from {
+						opacity: 0;
+						transform: translateY(100px);
+					}
+					to {
+						opacity: 1;
+						transform: translateY(0);
+					}
+				}
+			</style>
+
+			<style>
+				/* Estilos para el menú flotante */
+				body {
+					font-family: Arial, sans-serif;
+					margin: 0;
+					padding: 0;
+				}
+				.menu-flotante {
+					position: fixed;
+					top: 50px;
+					right: 20px;
+					background-color: #333;
+					padding: 10px;
+					border-radius: 8px;
+				}
+				.menu-flotante a {
+					display: block;
+					color: white;
+					text-decoration: none;
+					padding: 10px;
+					background-color: #444;
+					margin: 5px 0;
+					border-radius: 4px;
+					text-align: center;
+				}
+				.menu-flotante a:hover {
+					background-color: #555;
+				}
+				.output {
+					margin: 50px;
+					padding: 20px;
+					border: 1px solid #ddd;
+					background-color: #f9f9f9;
+					border-radius: 8px;
+					min-height: 150px;
+				}
+			</style>
+					
+				</head>
+
+				<body bgcolor=#93C7C7 text="black">
+					<center>
+
+					<table> 
+
+						<tr>
+							<td> <img src="xd.jfif"></td>
+							<td align="center">
+								<h1 >Tecnologico Nacional de Mexico</h1>
+								<h2>Instituto Tecnologico de Tehuacan</h2>
+								<h3>Programacion Web</h3>
+								
+							</td>
+							<td>
+								<img src="xd.jfif">
+							</td>
+						</tr>
+
+					</table>
+
+
+					
+					<!-- Slideshow container -->
+			<div class="slideshow-container">
+
+			<!-- Full-width images with number and caption text -->
+			<div class="mySlides fade" >
+				<div class="numbertext">1 / 3</div>
+				<img src="img1.jfif" style="width:70%">
+				<div class="text">Papu Papus</div>
+			</div>
+
+			<div class="mySlides fade">
+				<div class="numbertext">2 / 3</div>
+				<img src="img2.jfif" style="width:70%">
+				<div class="text"> XDD</div>
+			</div>
+
+			<div class="mySlides fade">
+				<div class="numbertext">3 / 3</div>
+				<img src="img3.jfif" style="width:70%">
+				<div class="text"> Inner Calm :'p </div>
+			</div>
+
+			<!-- Next and previous buttons -->
+			<a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+			<a class="next" onclick="plusSlides(1)">&#10095;</a>
+			</div>
+			<br>
+
+			<!-- The dots/circles -->
+			<div style="text-align:center">
+			<span class="dot" onclick="currentSlide(1)"></span>
+			<span class="dot" onclick="currentSlide(2)"></span>
+			<span class="dot" onclick="currentSlide(3)"></span>
+			</div>
+
+					
+					</center>
+
+					<hr>
+
+					<h1>Bienvenido a mi Pagina</h1>
+
+						 <!-- Reloj Moderno -->
+				<div class="clock">
+					<div class="hand hour-hand"></div>
+					<div class="hand minute-hand"></div>
+					<div class="hand second-hand"></div>
+					<div class="number number1">12</div>
+
+			
+					<div class="number number3">3</div>
+				
+					<div class="number number5">6</div>
+					
+					<div class="number number7">9</div>
+					
+				</div>
+
+				 <script>
+					const hourHand = document.querySelector('.hour-hand');
+					const minuteHand = document.querySelector('.minute-hand');
+					const secondHand = document.querySelector('.second-hand');
+
+					function setTime() {
+						const now = new Date();
+						const seconds = now.getSeconds();
+						const minutes = now.getMinutes();
+						const hours = now.getHours();
+
+						const secondDegrees = ((seconds / 60) * 360) + 90;
+						secondHand.style.transform = `rotate(${secondDegrees}deg)`;
+
+						const minuteDegrees = ((minutes / 60) * 360) + ((seconds / 60) * 6) + 90;
+						minuteHand.style.transform = `rotate(${minuteDegrees}deg)`;
+
+						const hourDegrees = ((hours % 12) / 12 * 360) + ((minutes / 60) * 30) + 90;
+						hourHand.style.transform = `rotate(${hourDegrees}deg)`;
+					}
+
+					setInterval(setTime, 1000);
+					setTime();  // Inicializar inmediatamente
+				 </script>  
+
+
+					<div class="menu-flotante">
+						<a href="#" onclick="ejecutarPrograma(1)">Programa 1: Calcular RFC</a>
+						<a href="#" onclick="ejecutarPrograma(2)">Programa 2: Ecuación Cuadrática</a>
+						<a href="#" onclick="ejecutarPrograma(3)">Programa 3: Adivina un Número</a>
+					</div>
+				
+					<div class="output" id="output">
+						<h2>Resultado</h2>
+						<p>Aquí se mostrarán los resultados del programa seleccionado.</p>
+					</div>
+				
+					<script>
+						// Programa 1: Calcular RFC
+						function calcularRFC(nombre, apellidoPaterno, apellidoMaterno, fechaNacimiento) {
+							const rfcParte1 = apellidoPaterno.charAt(0).toUpperCase() +
+											apellidoPaterno.match(/[aeiou]/i)[0].toUpperCase() +
+											apellidoMaterno.charAt(0).toUpperCase() +
+											nombre.charAt(0).toUpperCase();
+							const fecha = new Date(fechaNacimiento);
+							const anio = fecha.getFullYear().toString().slice(2);
+							const mes = ("0" + (fecha.getMonth() + 1)).slice(-2);
+							const dia = ("0" + fecha.getDate()).slice(-2);
+							const rfc = rfcParte1 + anio + mes + dia;
+							return rfc;
+						}
+				
+						// Programa 2: Resolver Ecuación Cuadrática
+						function resolverEcuacionCuadratica(a, b, c) {
+							const discriminante = b * b - 4 * a * c;
+							if (discriminante > 0 && a !== 0) {
+								const x1 = (-b + Math.sqrt(discriminante)) / (2 * a);
+								const x2 = (-b - Math.sqrt(discriminante)) / (2 * a);
+								return { x1, x2 };
+							} else {
+								return null;
+							}
+						}
+				
+						// Programa 3: Adivina un Número
+						function adivinaNumero() {
+							const numeroSecreto = Math.floor(Math.random() * 100) + 1;
+							let intento;
+							let intentosRealizados = 0;
+				
+							do {
+								intento = parseInt(prompt("Adivina un número entre 1 y 100:"));
+								intentosRealizados++;
+								if (intento > numeroSecreto) {
+									alert("Te pasaste");
+								} else if (intento < numeroSecreto) {
+									alert("Te falta");
+								}
+							} while (intento !== numeroSecreto);
+				
+							alert(`¡Adivinaste! El número era ${numeroSecreto}. Intentos realizados: ${intentosRealizados}`);
+						}
+				
+						// Ejecutar los programas según el número seleccionado
+						function ejecutarPrograma(programa) {
+							const outputDiv = document.getElementById('output');
+							outputDiv.innerHTML = ''; // Limpiar el contenido previo
+				
+							if (programa === 1) {
+								// Ejecutar el programa 1 - Calcular RFC
+								const nombre = prompt("Introduce tu nombre:");
+								const apellidoPaterno = prompt("Introduce tu apellido paterno:");
+								const apellidoMaterno = prompt("Introduce tu apellido materno:");
+								const fechaNacimiento = prompt("Introduce tu fecha de nacimiento (YYYY-MM-DD):");
+								const rfc = calcularRFC(nombre, apellidoPaterno, apellidoMaterno, fechaNacimiento);
+								outputDiv.innerHTML = `<h2>RFC Calculado:</h2><p>Tu RFC es: ${rfc}</p>`;
+							} else if (programa === 2) {
+								// Ejecutar el programa 2 - Resolver Ecuación Cuadrática
+								const a = parseFloat(prompt("Introduce el valor de a:"));
+								const b = parseFloat(prompt("Introduce el valor de b:"));
+								const c = parseFloat(prompt("Introduce el valor de c:"));
+								const resultado = resolverEcuacionCuadratica(a, b, c);
+								if (resultado) {
+									outputDiv.innerHTML = `<h2>Soluciones de la Ecuación Cuadrática:</h2><p>x1 = ${resultado.x1}, x2 = ${resultado.x2}</p>`;
+								} else {
+									outputDiv.innerHTML = `<h2>No hay solución real</h2>`;
+								}
+							} else if (programa === 3) {
+								// Ejecutar el programa 3 - Adivina un número
+								adivinaNumero(); // Aquí el resultado va en alertas
+								outputDiv.innerHTML = `<h2>¡Gracias por jugar!</h2>`;
+							}
+						}
+					</script>
+
+					<h2>Mi nombre es <u>Brian Lemuel Leon Vazquez</u> y estudio la asignatura de <b>programacion web</b>. En esta pagina 
+					se abordaran temas relacionados <i>a la web, a las bases de datos,xml,css,php,</i>etc.</h2>
+					
+					<h4>Las carreras que ofrece el Instituto Tecnologico de Tehuacan son: </h4>
+
+						<ol>
+
+							<h2 en Sistemas Computacionales</h2>
+							<li>Ingenieria Industrial</li>
+							<li>Ingenieria Civil</li>
+							<li>Ingenieria Mecatronia</li>
+							<li>Ingenieria Biomedica</li>
+							<li>Ingenieria Electronica</li>
+							<li>Ingenieria en Gestion Empresarial</li>
+							<li>Ingenieria Logistica</li>
+							<li>Lic. en Administracion</li>
+							<li>Contador Publico</li>
+
+
+						</ol>
+
+						<center>
+						<table border="3">
+
+							<tr>
+								<th>NC</th>
+								<th>nombre</th>
+								<th>Especialidad</th>
+								<th>semestre</th>
+							</tr>
+
+							<tr>
+								<td>21360974</td>
+								<td>Brian Lemuel Leon Vazquez</td>
+								<td>Ingenieria en Sistemas Computacionales</td>
+								<td>7</td>
+							</tr>
+							<tr>
+								<td>21466783</td>
+								<td>Maria Ruiz</td>
+								<td>Ingenieria Industrial</td>
+								<td>7</td>
+							</tr>
+							<tr>
+								<td>21360974</td>
+								<td>Jose David Peña</td>
+								<td>Ingenieria en Sistemas Computacionales</td>
+								<td>7</td>
+							</tr>
+							<tr>
+								<td>21466783</td>
+								<td>Maria Ruiz</td>
+								<td>Ingenieria Industrial</td>
+								<td>7</td>
+							</tr>
+							<tr>
+								<td>21360974</td>
+								<td>Christhoper Daniel Aquino Perez</td>
+								<td>Ingenieria en Sistemas Computacionales</td>
+								<td>7</td>
+							</tr>
+							<tr>
+								<td>21466783</td>
+								<td>Maria Ruiz</td>
+								<td>Ingenieria Industrial</td>
+								<td>7</td>
+							</tr>
+							<tr>
+								<td>21360974</td>
+								<td>Brian Lemuel Leon Vazquez</td>
+								<td>Ingenieria en Sistemas Computacionales</td>
+								<td>7</td>
+							</tr>
+							<tr>
+								<td>21466783</td>
+								<td>Citlaly Jaqueline Olivares Cancino</td>
+								<td>Ingenieria Bioquimica</td>
+								<td>7</td>
+							</tr>
+							<tr>
+								<td>21360974</td>
+								<td>Jafet Hernandez</td>
+								<td>Ingenieria en Sistemas Computacionales</td>
+								<td>7</td>
+							</tr>
+							<tr>
+
+								<td>21466783</td>
+								<td>Jason Roberto</td>
+								<td>Ingenieria Industrial</td>
+								<td>7</td>
+
+							</tr>
+
+						</table>
+					</center>
+
+					<A href="formulario.html">Click para ir a la pagina del formulario</A>
+
+				
+					<!-- Ícono de Facebook con enlace -->
+				
+			
+
+			
+				<a href="https://www.facebook.com" target="_blank">
+						
+					
+				<div class="sprite bg-facebook"></div>
+					
+				
+				</a>
+				
+					
+				
+				
+				<!-- Ícono de Instagram con enlace -->
+					
+				
+				<a href="https://www.instagram.com" target="_blank">
+						
+				
+				<div class="sprite bg-insta"></div>
+					</a>
+				
+					
+				
+				<!-- Ícono de YouTube con enlace -->
+					
+				
+				<a href="https://www.youtube.com" target="_blank">
+						
+				
+				<div class="sprite bg-youtube"></div>
+					
+					</a
+				
+					</
+				</a>
+				
+					
+				
+				
+				
+				
+				<!-- Ícono de Twitter con enlace -->
+					
+					
+				
+				
+				<a href="https://www.twitter.com" target="_blank">
+						<div class="sprite bg-twitter"></div>
+					
+				
+				</a>
+
+				
+
+	</body>
+
+</html>
